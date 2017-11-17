@@ -17,17 +17,8 @@ namespace Time_and_Material
         {
             // open webpage
             IWebDriver driver = new ChromeDriver(@"D:\Industry Connect\webdriver\");
-            driver.Url = "http://horse-dev.azurewebsites.net/Account/Login?ReturnUrl=%2f";
-
-            // login
-            var username = driver.FindElement(By.Id("UserName"));
-            username.SendKeys("ray");
-
-            var password = driver.FindElement(By.Id("Password"));
-            password.SendKeys("123123");
-
-            var login = driver.FindElement(By.CssSelector("input[type^=submit]"));
-            login.Click();
+            
+            
 
             
             // open Time & Materials module
